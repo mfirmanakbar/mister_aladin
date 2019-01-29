@@ -1,0 +1,8 @@
+config/conf-dev.yml
+config/database.go
+files/*
+*.exe
+main
+vendor/*
+.vscode
+*.lock

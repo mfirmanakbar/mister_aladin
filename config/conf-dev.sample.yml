@@ -1,0 +1,15 @@
+#port where service shall LISTEN for connection
+listenPort: :8095
+
+#database configuration
+query: ./query/db_query.yml
+dbType: mysql
+dbUrl: uname:password@tcp(dbIp:3306)/database_name
+zsmartPath: http://10.0.0.188:9400
+zsmartUserName: admin
+zsmartPassword: 0192023A7BBD73250516F069DF18B500
+zsmartRequestID: 1122334455
+#logging settings
+log:
+  filename:
+  level: DEBUG

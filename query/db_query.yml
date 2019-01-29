@@ -1,0 +1,17 @@
+SQLCommand:
+#  Perhatikan huruf besar/kecil dan posisi
+ getEmployeeName: >
+     select empname from employee where empid=?;
+
+ GetEmployeeNIK: >
+     select empid from employee where empname=?;
+
+ GetUser: >
+     select UserRole from sf_ecluster_users where Username=?;
+
+ InsertUser: >
+    insert into sf_ecluster_users (Username, UserRole, CreatedDate,CreatedBy, UpdatedDate)
+            values
+                 (?,?,NOW(),?,NOW());
+ GetTableColumns: >
+     SHOW COLUMNS FROM ?
